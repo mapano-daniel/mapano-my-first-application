@@ -80,14 +80,9 @@
                     <span>Home Page</span>
                 </x-nav-link>
 
-                <x-nav-link href="/about" :active="request()->is('about')" class="sidebar-item">
+                <x-nav-link href="/jobs" :active="request()->is('jobs')" class="sidebar-item">
                     <svg class="w-5 h-5 mr-3 text-gray-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-briefcase"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
-                    <span>About Page</span>
-                </x-nav-link>
-
-                <x-nav-link href="/contact" :active="request()->is('contact')" class="sidebar-item">
-                    <svg class="w-5 h-5 mr-3 text-gray-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-briefcase"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
-                    <span>Contact Page</span>
+                    <span>Jobs Page</span>
                 </x-nav-link>
                 
             </nav>
