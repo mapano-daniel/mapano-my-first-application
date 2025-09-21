@@ -11,5 +11,16 @@ class Job extends Model
  
     // By convention, Laravel assumes a 'jobs' table. 
     // We need to tell it to use our 'job_listings' table instead. 
-    protected $table = 'job_listings'; 
+    protected $table = 'job_listings';
+    
+    public function employer() 
+    { 
+        return $this->belongsTo(\App\Models\Employer::class); 
+    }
+    
+    public function tags() 
+    { 
+        return $this->belongsToMany(\App\Models\Tag::class, foreignPivotKey: 
+    "job_listing_id"); 
+    } 
 }
