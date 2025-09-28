@@ -92,7 +92,7 @@
                 <div class="flex items-center space-x-3">
                     <img class="w-10 h-10 rounded-full" src="https://placehold.co/40x40/f5f5f7/1d1d1f?text=A" alt="User Avatar">
                     <div>
-                        <p class="font-semibold">Alex J.</p>
+                        <p class="font-semibold">Daniel K.I.M.</p>
                         <p class="text-sm text-gray-500">Admin</p>
                     </div>
                 </div>
