@@ -1,6 +1,6 @@
 <x-layout> 
     <x-slot:heading> 
-        Job 
+        Edit Job 
     </x-slot:heading> 
     
     <p class="text-sm text-gray-500">{{ $job->employer->name }}</p>

@@ -3,6 +3,16 @@
         Jobs Page
     </x-slot:heading>
 
+    <!-- ✅ Create Job Button -->
+    <div class="mb-6 flex justify-end">
+        <a href="/jobs/create" 
+            class="inline-block rounded-md bg-indigo-600 px-6 py-3 text-lg font-semibold
+            text-white shadow-sm hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-600">
+            + Create Job
+        </a>
+    </div>
+
+
     <div class="flex flex-col min-h-[80vh]"> 
         <!-- Jobs Grid -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 flex-grow">
@@ -18,6 +28,12 @@
                             {{ $tag->name }}
                         </span>
                     @endforeach
+                    <div class="mt-4 flex justify-end gap-2">
+                        <a href="/jobs/{{ $job->id }}/edit" 
+                        class="px-3 py-1 bg-gray-500 text-white text-sm rounded-md hover:bg-red-600">
+                            Edit
+                        </a>
+                    </div>
                 </div>
             @endforeach
         </div>
