@@ -24,4 +24,8 @@ class Job extends Model
         return $this->belongsToMany(\App\Models\Tag::class, foreignPivotKey: 
     "job_listing_id"); 
     } 
+
+    protected $casts = [
+        'salary' => 'float',
+    ];
 }
